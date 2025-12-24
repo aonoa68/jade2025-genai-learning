@@ -20,7 +20,11 @@
 ├── README.md                          # 本ファイル
 ├── analysis_main.py                   # メイン分析コード
 ├── analysis_task_characteristics.py   # 課題特性分析コード
-└── requirements.txt                   # 必要ライブラリ
+├── requirements.txt                   # 必要ライブラリ
+└── figures/                           # 出力図
+    ├── fig1_longitudinal_ai_support.png  # 縦断変化図
+    ├── fig2_emotion_heatmap.png          # 感情ヒートマップ
+    └── fig3_task_characteristics.png     # 課題特性分析図（実行時生成）
 ```
 
 ## 必要環境 / Requirements
@@ -82,11 +86,19 @@ exec(open('analysis_task_characteristics.py').read())
 
 ## 出力ファイル / Output Files
 
-| ファイル名 | 内容 |
-|-----------|------|
-| fig1_session_summary.png | セッション別指数の棒グラフ |
-| fig2_emotion_heatmap.png | 感情プロファイルのヒートマップ |
-| fig_task_characteristics.png | 課題特性フラグ別の比較図 |
+| ファイル名 | 内容 | 論文での使用 |
+|-----------|------|-------------|
+| fig1_longitudinal_ai_support.png | 縦断追跡参加者のAI支援指数の推移 | 図1 |
+| fig2_emotion_heatmap.png | セッション別感情プロファイル | 図2 |
+| fig3_task_characteristics.png | 課題特性フラグ別の指数比較 | 図3（任意） |
+
+### 図の説明
+
+**図1**: 縦断追跡可能な3名の個人軌跡（灰線）と平均（赤線）
+
+**図2**: Plutchikの8基本感情の強度をヒートマップで可視化
+
+**図3**: 課題特性（コード実装・プロンプト設計・データ選択）への言及有無による指数の比較
 
 ## 引用 / Citation
 
