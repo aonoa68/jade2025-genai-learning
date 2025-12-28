@@ -1,4 +1,16 @@
+# 統計演習における生成AI学習支援の分析コード
+# Requirements for jade2025-genai-learning
+
+# 基本ライブラリ
 pandas>=1.5.0
 numpy>=1.23.0
 matplotlib>=3.6.0
 seaborn>=0.12.0
+scipy>=1.9.0
+openpyxl>=3.0.0  # Excel読み込み用
+
+# 日本語表示
+japanize_matplotlib>=1.1.0
+
+# 探索的分析用（対応分析）
+prince>=0.7.0
